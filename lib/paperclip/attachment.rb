@@ -232,6 +232,13 @@ module Paperclip
       instance_read(:file_name)
     end
 
+
+    # Returns the name of the file as originally assigned, and lives in the
+    # <attachment>_guid attribute of the model.
+    def guid
+      instance_read(:guid)
+    end
+
     # Returns the size of the file as originally assigned, and lives in the
     # <attachment>_file_size attribute of the model.
     def size
