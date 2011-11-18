@@ -65,6 +65,11 @@ module Paperclip
       attachment.updated_at
     end
 
+    # Allows for a completely radom GUID to be included in the path
+    def guid attachment, style_name
+      attachment.guid
+    end
+
     # Returns the Rails.root constant.
     def rails_root attachment, style_name
       Rails.root
